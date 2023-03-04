@@ -57,7 +57,7 @@ animation-name:fadeInAnime;
 animation-duration:3s;
 animation-fill-mode:forwards;
 opacity:0;
-	font-size:30px;
+	
 }
 
 @keyframes fadeInAnime{
@@ -74,6 +74,8 @@ opacity:0;
 .flex{
   display:flex;
   flex-wrap: wrap;
+	font-size:30px;
+	text-align:center;
 }
 
 .flowing {
