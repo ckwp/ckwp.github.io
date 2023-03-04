@@ -54,9 +54,10 @@ html,body{
 }
 .fadeIn{
 animation-name:fadeInAnime;
-animation-duration:1s;
+animation-duration:3s;
 animation-fill-mode:forwards;
 opacity:0;
+	font-size:15px;
 }
 
 @keyframes fadeInAnime{
