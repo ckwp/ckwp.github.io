@@ -17,20 +17,12 @@ a{
   color: #333;
 }
 
-.tyuo{
-	text-align:center;
-{
-
 /*========= particle js を描画するエリア設定 ===============*/
 
 html,body{
   height: 100%;/*高さを100%にして描画エリアをとる*/
 }
 	
-.tisa {
-  font-size:0.5em;
-}
-
 #particles-js{ 
   position:fixed;/*描画固定*/
   z-index:-1;/*描画を一番下に*/
@@ -65,6 +57,7 @@ html,body{
 	width: 0;
 	margin: 0;
 	font-size: 3vw;
+	text-align:center;
 	font-weight: bold;
 	color: #ff6347;
 	white-space: nowrap;
