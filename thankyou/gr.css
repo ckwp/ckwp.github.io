@@ -76,6 +76,9 @@ opacity:0;
   flex-wrap: wrap;
 	font-size:30px;
 	text-align:center;
+	
+  justify-content: center;
+  align-items: center;
 }
 
 .flowing {
