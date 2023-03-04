@@ -26,6 +26,10 @@ a{
 html,body{
   height: 100%;/*高さを100%にして描画エリアをとる*/
 }
+	
+.tisa {
+  fontsize:0.5em;
+}
 
 #particles-js{ 
   position:fixed;/*描画固定*/
