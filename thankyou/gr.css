@@ -57,7 +57,7 @@ animation-name:fadeInAnime;
 animation-duration:3s;
 animation-fill-mode:forwards;
 opacity:0;
-	font-size:15px;
+	font-size:30px;
 }
 
 @keyframes fadeInAnime{
