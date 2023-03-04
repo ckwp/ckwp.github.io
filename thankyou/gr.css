@@ -3,6 +3,7 @@ body {
   background-size: cover;
   font-family: "Mochiy Pop One";
 	vertical-align: middle;
+	 overflow: hidden;
 }
 @charset "utf-8";
 
