@@ -15,6 +15,11 @@ body {
   text-align:center;
 }
 
+.lii{
+  text-align:right;
+  font-size:20px;
+}
+
 a{
   color: #333;
 }
@@ -76,7 +81,7 @@ opacity:0;
 .flex{
   display:flex;
   flex-wrap: wrap;
-	font-size:30px;
+	font-size:40px;
 	text-align:center;
 	
   justify-content: center;
