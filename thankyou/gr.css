@@ -52,3 +52,23 @@ html,body{
 .smooth.is-animated {
   clip-path: inset(0);
 }
+
+.flowing {
+	width: 0;
+	margin: 0;
+	font-size: 3vw;
+	font-weight: bold;
+	color: #ff6347;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: flowing-anim 3s forwards linear;
+}
+
+@keyframes flowing-anim {
+ 0%{
+	 width: 0%;
+   }
+100%{
+	 width: 100%;
+   }
+}
