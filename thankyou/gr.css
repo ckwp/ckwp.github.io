@@ -37,3 +37,18 @@ html,body{
   width:100%;
   height: 100%;
 }
+//CSS
+.smooth {
+  clip-path: inset(0 100% 0 0);
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  transition: 1.4s cubic-bezier(0.37, 0, 0.63, 1);
+  transition-property: clip-path;
+  line-height: 1;
+  height: 40px;
+  margin-top: 15px;
+}
+.smooth.is-animated {
+  clip-path: inset(0);
+}
