@@ -9,7 +9,26 @@
 <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-8/css/5-8.css">
  </head>
    <body>
+//HTML
+<div class="smooth anim">
+  文字が滑らかに表示される
+</div>
  
+//CSS
+.smooth {
+  clip-path: inset(0 100% 0 0);
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  transition: 1.4s cubic-bezier(0.37, 0, 0.63, 1);
+  transition-property: clip-path;
+  line-height: 1;
+  height: 40px;
+  margin-top: 15px;
+}
+.smooth.is-animated {
+  clip-path: inset(0);
+}
 <div id="wrapper">
   
 <!--/wrapper--></div>
