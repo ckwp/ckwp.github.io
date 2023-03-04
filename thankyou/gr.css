@@ -68,6 +68,13 @@ opacity:0;
     opacity: 1;
   }
 }
+
+
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+}
+
 .flowing {
 	width: 0;
 	margin: 0;
