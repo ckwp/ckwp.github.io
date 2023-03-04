@@ -17,6 +17,10 @@ a{
   color: #333;
 }
 
+.tyuo{
+	text-align:center;
+{
+
 /*========= particle js を描画するエリア設定 ===============*/
 
 html,body{
@@ -65,11 +69,11 @@ html,body{
 	animation: flowing-anim 5s forwards linear;
 }
 .flowing:nth-child(2) {
-	animation-delay: 5s;
+	animation-delay: 10s;
 }
 
 .flowing:nth-child(3) {
-	animation-delay: 10s;
+	animation-delay: 20s;
 }
 
 @keyframes flowing-anim {
