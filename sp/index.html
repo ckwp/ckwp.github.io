@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ワープロ部公式サイト</title>
+<link href="./resources/hamburger.css" rel="stylesheet" type="text/css">
+<link href="./resources/style.css" rel="stylesheet" type="text/css">
+<link href="./resources/slideshow/slideshow.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="resources/jquery-1.9.1.min.js"></script>
+
+<script src="resources/slideshow/slideshow.js"></script>
+<!--フォント読み込み-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Noto+Sans+JP&display=swap" rel="stylesheet"></head>
+<body>
+
+	<div id="pc">
+
+	</div>
+
+	<div class="mobile">
+
+		<div id="navArea">
+			<a href="index.html"><img src="./resources/logo.png" width="50%" height="70%"></a>
+			<nav>	
+			  <div class="inner">
+				<ul>
+				  <li><a href="index.html"><img src="./resources/logo.png" width="80%"></a></li>
+				  <li><a href="./info.html">Info</a></li>
+				  <li><a href="./about.html">About</a></li>
+				  <li><a href="./memory.html">Memory</a></li>
+				  <li><a href="contact.html">Contact</a></li>
+				  <li><a href="https://www.cku-h.ed.jp">千葉経済大学附属高校<br>ホームページ</a></li>
+				</ul>
+			  </div>
+			</nav>
+		  
+			<div class="toggle_btn">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		  
+			<div id="mask"></div>
+		  
+		  </div>
+		  
+			<p class="title">ワープロ部公式サイト</p>
+
+		<!-- スライドショー ここから -->
+		<div class="content_wrap_slide">
+
+		<div id="stage">
+		<ul>
+	 	<li><img src="./resources/slideshow/1.png"></li>
+	 	<li><img src="./resources/slideshow/2.png"></li>
+	 	<li><img src="./resources/slideshow/3.png"></li>
+		 <li><img src="./resources/slideshow/4.png"></li>
+	 	<li><img src="./resources/slideshow/5.png"></li>
+		</ul>
+		<div id="slide_control"><span id="prev_button"><img src="./resources/slideshow/prev.png" alt="戻る"/></span> <span id="number_last"></span> <span id="next_button"><img src="resources/slideshow/next.png" alt="進む"/></span> <span id="play_stop"></span></div>
+		</div><!-- stage -->
+	
+		</div><!-- content_wrap_slide -->
+		<!-- スライドショー ここまで -->
+	<div class="mokuji">
+		<div id="tooplate_footer" style="text-align: center;"><br><br>
+    
+			Copyright © 2023 <a href="index.html">CK-WPC</a> - Design: <a href="https://ck-wp.club">CK-WPC</a>
+		
+			</div>
+
+
+		
+</body>
+
+<script> //ハンバーガーメニュー
+	(function($) {
+var $nav   = $('#navArea');
+var $btn   = $('.toggle_btn');
+var $mask  = $('#mask');
+var open   = 'open'; // class
+// menu open close
+$btn.on( 'click', function() {
+if ( ! $nav.hasClass( open ) ) {
+  $nav.addClass( open );
+} else {
+  $nav.removeClass( open );
+}
+});
+// mask close
+$mask.on('click', function() {
+$nav.removeClass( open );
+});
+} )(jQuery);
+</script>
+</html>

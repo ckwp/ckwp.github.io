@@ -1,0 +1,21 @@
+  #stage {
+	position:relative;
+}
+#stage ul {
+	padding: 0px;
+	position:relative;
+}
+#stage ul li {
+	width: 100%;
+	list-style-type: none;
+	position:absolute;
+	opacity: 0;
+}
+#stage img {
+	max-width: 100%;
+	height: auto;
+}
+
+#slide_control {
+	position: absolute;
+}
