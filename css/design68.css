@@ -537,7 +537,6 @@ h1 {
 
 /* フッター（削除OK※デフォルト非表示） */
 .mainFooter {
-    display: none;
     position: relative;
     width: 50%;
     margin: 5vh auto;
