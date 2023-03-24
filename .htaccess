@@ -2,3 +2,11 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !\.(css|js|jpg|jpeg|gif|png|xml)$ [NC]
 RewriteRule ^(.+)\.(.+)$ $1\.html
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (iPhone|Android.*Mobile|Windows.*Phone) [NC]
+RewriteCond %{QUERY_STRING} !mode=pc
+RewriteRule ^$ /sp/ [R,L]
+</IfModule>
