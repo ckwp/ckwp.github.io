@@ -16,9 +16,6 @@ body{
   font-size: 1.5em;
 }
 
-.titlelogo{
-  text-align: center;
-}
 
 .mokuji{
   font-size: 80%;
@@ -27,6 +24,7 @@ body{
 .subtitle{
   text-decoration: underline;
   font-size: 150%;
+  text-align: center;
 }
 
 iframe {
@@ -45,6 +43,20 @@ iframe {
 
 .footer-copyright a {
   color: #fff;
+}
+
+.activity {
+  font-size: 120%;
+}
+
+.year{
+  font-size: 1.5em;
+}
+
+.kazu{
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 
@@ -74,7 +86,8 @@ iframe {
     font-family: 'Kiwi Maru', serif;
     font-family: 'Noto Sans JP', sans-serif;
   }
-  
-
+.titlelogo{
+  text-align: center;
 }
 
+}
