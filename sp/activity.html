@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>info - ワープロ部公式サイト</title>
+<link href="./resources/hamburger.css" rel="stylesheet" type="text/css">
+<link href="./resources/style.css" rel="stylesheet" type="text/css">
+<link href="./resources/slideshow/slideshow.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="resources/jquery-1.9.1.min.js"></script>
+
+<script src="resources/slideshow/slideshow.js"></script>
+<!--フォント読み込み-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Noto+Sans+JP&display=swap" rel="stylesheet"></head>
+<body>
+	<div class="PC">
+	</div>
+
+	<div class="mobile">
+
+		<div id="navArea">
+			<a href="index"><img src="./resources/logo.png" width="50%" height="70%"></a>
+			<nav>	
+			  <div class="inner">
+				<ul>
+				  <li><a href="index"><img src="./resources/logo.png" width="80%"></a></li>
+				  <li><a href="info">Info</a></li>
+				  <li><a href="about">About</a></li>
+				  <li><a href="memory">Memory</a></li>
+				  <li><a href="activity">Activity</a></li>
+				  <li><a href="contact">Contact</a></li>
+				  <li><a href="https://www.cku-h.ed.jp">千葉経済大学附属高校<br>ホームページ</a></li>
+				</ul>
+			  </div>
+			</nav>
+		  
+			<div class="toggle_btn">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		  
+			<div id="mask"></div>
+		  
+		  </div>
+		  
+			<p class="title">ワープロ部公式サイト</p>
+
+		<div class="mokuji">
+			<!--infoとか書いてあるけど共通-->
+			<div id="info">
+			<p class="subtitle"><b>Activity</b></p>
+			<p style="text-align: right; font-size: 0.9em;">※確認できたもののみ公開しています</p>
+			<h3 class="year">令和4年度</h3>
+			<div class="activity">
+			<p>ITパスポート合格・・・<span class="kazu">2名</span></p>
+			<p>ビジネス文書実務検定1級合格・・・<span class="kazu">2名</span></p>
+			<p>情報処理検定1級・・・<span class="kazu">1名</span></p>
+			</div>
+			</div>
+
+			<div id="tooplate_footer" style="text-align: center;"><br><br>
+    
+			Copyright © 2023 <a href="index">CK-WPC</a> - Design: <a href="https://ck-wp.club">CK-WPC</a>
+		
+			</div>
+		</div>
+	</div>
+</body>
+
+<script> //ハンバーガーメニュー
+	(function($) {
+var $nav   = $('#navArea');
+var $btn   = $('.toggle_btn');
+var $mask  = $('#mask');
+var open   = 'open'; // class
+// menu open close
+$btn.on( 'click', function() {
+if ( ! $nav.hasClass( open ) ) {
+  $nav.addClass( open );
+} else {
+  $nav.removeClass( open );
+}
+});
+// mask close
+$mask.on('click', function() {
+$nav.removeClass( open );
+});
+} )(jQuery);
+</script>
+</html>
