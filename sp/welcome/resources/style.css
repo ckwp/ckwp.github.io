@@ -16,7 +16,9 @@ body{
   font-size: 1.5em;
 }
   
-  
+.cnta{
+  text-align: center;
+  }
   
 /* Instagram */
 .flowbtn9 .fa-instagram{
