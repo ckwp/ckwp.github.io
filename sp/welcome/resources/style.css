@@ -87,7 +87,21 @@ color: #fff;
 font-size: 14px;
 }
 
-
+.sample-demo .ig-btn-4 {
+border-radius: 5px;
+padding: 5px 10px 3px 10px;
+background: linear-gradient(#5478f2 0%, #f23f79 60%, orange 100%);
+display: inline-block;
+cursor: pointer;
+}
+.sample-demo .ig-btn-4:hover {
+opacity: 0.8;
+}
+.sample-demo .ig-btn-4 a {
+color: #fff;
+font-size: 22px;
+}
+  
 .mokuji{
   font-size: 80%;
 }
