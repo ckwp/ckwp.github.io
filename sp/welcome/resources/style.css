@@ -86,6 +86,22 @@ text-align:center!important;
 }
   
   
+.till {
+  color: #505050;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.3;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+
+.till:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
+}
+  
 .mokuji{
   font-size: 80%;
 }
