@@ -71,7 +71,17 @@ body{
 }
 
   
-  
+display: inline-block;
+cursor: pointer;
+}
+.sample-demo .ig-btn-3:hover {
+opacity: 0.8;
+}
+.sample-demo .ig-btn-3 a {
+color: #fff;
+font-size: 14px;
+}
+
 
 .mokuji{
   font-size: 80%;
