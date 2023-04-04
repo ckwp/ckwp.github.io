@@ -71,6 +71,11 @@ body{
 }
 
   
+
+.sample-demo .ig-btn-3 {
+border-radius: 5px;
+padding: 0px 10px 2px 10px;
+background: linear-gradient(to right, #5478f2 0%, #f23f79 60%, orange 100%);
 display: inline-block;
 cursor: pointer;
 }
