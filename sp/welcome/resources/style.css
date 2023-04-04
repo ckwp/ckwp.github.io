@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*--スマートフォン--*/
+@media screen and (max-width: 460px){
+  #pc {
+  display: none;
+}
+
+body{
+  font-family: 'Kiwi Maru', serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+.mokuji{
+  font-size: 80%;
+}
+
+.subtitle{
+  text-decoration: underline;
+  font-size: 150%;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 4/3; /*アスペクト比（縦横比）を指定*/
+}
+
+
+.footer-copyright {
+  padding: 1rem;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  background: #ed7d31;
+}
+
+.footer-copyright a {
+  color: #fff;
+}
+
+.activity {
+  font-size: 120%;
+}
+
+.year{
+  font-size: 1.5em;
+}
+
+.kazu{
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .md-flex {
+    display: flex;
+  }
+
+  .md-flex li + li {
+    margin-left: 16px;
+  }
+}
+}
+
+/*--PC--*/
+@media screen and (min-width: 461px) {
+  .mobile {
+    display: none;
+  }
+
+  body{
+    font-family: 'Kiwi Maru', serif;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+
+}
+
