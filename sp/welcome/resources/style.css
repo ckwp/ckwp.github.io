@@ -75,7 +75,7 @@ padding:0!important;
 }
 /* アイコンボタンの位置調整 */
 .snsbtniti2{
-display:flex;
+display:block
 flex-flow:row wrap;
 }
 /* アイコンボタン同士の余白調整 */
