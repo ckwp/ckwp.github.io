@@ -1,1 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2023/04/05-編集後記 - 千葉経済ワープロ部公式サイト</title>
+<link href="https://www.ck-wp.club/sp/welcome/resources/hamburger.css" rel="stylesheet" type="text/css">
+<link href="https://www.ck-wp.club/sp/welcome/resources/style.css" rel="stylesheet" type="text/css">
+<link href="https://www.ck-wp.club/sp/welcome/resources/slideshow/slideshow.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="https://www.ck-wp.club/sp/welcome/resources/favicon.ico" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="resources/jquery-1.9.1.min.js"></script>
 
+<script src="resources/slideshow/slideshow.js"></script>
+<!--フォント読み込み-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	</head>
+<body>
+
+	<div id="pc">
+
+	</div>
+
+	<div class="mobile">
+
+		<div id="navArea">
+			<a href="index"><img src="./resources/logo.png" width="50%" height="70%"></a>
+			<nav>	
+			  <div class="inner">
+				<ul>
+					<li><a href="https://www.ck-wp.club/sp/index"><img src="./resources/logo.png" width="80%"></a></li>
+					<li><a href="https://www.ck-wp.club/sp/info">Info</a></li>
+					<li><a href="https://www.ck-wp.club/sp/about">About</a></li>
+					<li><a href="https://www.ck-wp.club/sp/memory">Memory</a></li>
+					<li><a href="https://www.ck-wp.club/sp/activity">Activity</a></li>
+					<li><a href="https://www.ck-wp.club/sp/contact">Contact</a></li>
+					<li><a href="https://www.cku-h.ed.jp">千葉経済大学附属高校<br>ホームページ</a></li>
+				  </ul>
+			  </div>
+			</nav>
+		  
+			<div class="toggle_btn">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		  <div class="naiyou">
+        <p>新入生のみなさん、<br>ご入学おめでとうございます。
+          ワープロ部部員のKです。<br>
+          ワープロ部では、主に、検定へ向けての勉強をしています！<br>
+         パソコンに詳しい方、興味のある方、<br>楽しくワイワイやりたい方、資格取得を目指したい方など、<br>どなたでも大歓迎です。<br>ワープロ部に入部することで、<br>htmlの基礎を学ぶことができるかもしれません(?)
+          <br>
+          
+          HTMLは、<br>HyperText Markup Languageの略称で、<br>Webページを作成するためのマークアップ言語の一つです。<br>HTMLを使用することで、<br>テキストや画像、動画などを組み合わせた<br>Webページを作成することができます。<br>また、HTMLを学ぶことで、<br>より高度なWebページの制作や<br>Webアプリケーションの開発に<br>役立つ場合もあります。
+          <br>
+          このページもHTMLやPHPなどの言語で書かれています。
+          <br>
+          入学した時は1mmもわかりませんでしたが、<br>
+          文化祭などの行事をきっかけにHTMLに触れ<br>
+          多少理解できるようになりました<br>
+          
+          スキルを伸ばしたい方は是非、<br>部室まで足を運んでみてください
+          <br>
+          質問はDMでも大丈夫です。
+          <a href="https://instagram.com/rs.rook">部員Kのインスタ</a>
+        
+      </div>
+      
+			<div id="mask"></div>
+		  
+		  </div>
+		 
+	<div class="mokuji">
+		<div id="tooplate_footer" style="text-align: center;"><br><br>
+    
+			Copyright © 2023 <a href="index">CK-WPC</a> - Design: <a href="https://www.ck-wp.club">CK-WPC</a>
+		
+			</div>
+
+
+		
+</body>
+
+<script> //ハンバーガーメニュー
+	(function($) {
+var $nav   = $('#navArea');
+var $btn   = $('.toggle_btn');
+var $mask  = $('#mask');
+var open   = 'open'; // class
+// menu open close
+$btn.on( 'click', function() {
+if ( ! $nav.hasClass( open ) ) {
+  $nav.addClass( open );
+} else {
+  $nav.removeClass( open );
+}
+});
+// mask close
+$mask.on('click', function() {
+$nav.removeClass( open );
+});
+} )(jQuery);
+</script>
+</html>
