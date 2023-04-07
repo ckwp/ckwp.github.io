@@ -59,7 +59,7 @@ h2::before {
      left: calc(50% - 45px);
     width: 90px;
     height: 90px;
-    background: url('../img/design68_circle.png') center / cover;
+    background: url('https://www.ck-wp/club/img/design68_circle.png') center / cover;
     z-index: -1;
 }
 h3 {
