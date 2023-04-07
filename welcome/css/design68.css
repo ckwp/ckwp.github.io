@@ -1,0 +1,699 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+/*
+'Roboto' is licensed under the Apache License 2.0.
+(http://www.apache.org/licenses/LICENSE-2.0)
+
+You can download the original font from here.
+https://fonts.google.com/specimen/Roboto+Condensed
+*/
+
+
+/* 基本設定 */
+:root {
+    --color1: #e0e8ee;
+    --color2: #5e87b1;
+}
+html {
+    background: transparent;
+    font-size: 62.5%;
+}
+body {
+    min-height: 100vh;
+    padding-top: 10px;
+    background: #ffffff;
+    color: #3b4443;
+    font-family: 'メイリオ', 'ヒラギノ角ゴ', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.2em;
+    line-height: 1.8;
+}
+a {
+    text-decoration: none;
+}
+h2,
+h3,
+h4,
+.mainNav,
+.headerNav,
+.back,
+.long_new .longImage,
+.new {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h2 {
+    position: relative;
+    padding-top: 50px;
+    margin: 0 0 80px;
+    color: #3e555a;
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: center;
+}
+h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+     top: 15px;
+     left: calc(50% - 45px);
+    width: 90px;
+    height: 90px;
+    background: url('../img/design68_circle.png') center / cover;
+    z-index: -1;
+}
+h3 {
+    margin: 30px 0;
+    font-size: 1.1em;
+}
+h3 > span {
+    display: inline-block;
+    padding: 2px 3px;
+    border-bottom: var(--color2) solid 2px;
+    color: #5c6772;
+    font-weight: normal;
+    line-height: 25px;
+}
+h4 {
+    display: flex;
+     align-items: center;
+    margin: 1em .5em;
+    color: #5c6772;
+    font-weight: normal;
+}
+h4::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: linear-gradient(-45deg, var(--color2) 50%, #ffffff00 50%);
+}
+.ja {
+    font-size: 90%;
+}
+
+em {
+    background: #ffffff;
+    background: repeating-linear-gradient(-50deg, var(--color1) 0, var(--color1) 1px, #fff 1px, #fff 5px);
+    font-style: normal;
+}
+strong {
+    background: var(--color1);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+input[type],
+textarea {
+    border: solid 1px #bbbbbb;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 95%;
+    font-family: inherit;
+}
+
+/* メールフォーム */
+.mailForm {
+    text-align: center;
+}
+.button {
+    background: var(--color2);
+    color: #fff;
+}
+.mailForm .enter {
+    width: 60%;
+    max-width: 500px;
+}
+.mailForm .enter {
+    padding: .3em;
+    margin: .5em 0;
+}
+textarea.enter {
+    height: 80px;
+}
+.mailForm .button {
+    padding: .3em 2em;
+    margin-top: 1em;
+}
+
+/* スラッシュ付きリスト */
+.slashList {
+    display: flex;
+     flex-wrap: wrap;
+    padding: 0 1em;
+}
+.slashList li::before {
+    content: '/';
+    color: #bbbbbb;
+    margin: 0 1em;
+}
+.slashList li:first-of-type::before {
+    content: none;
+}
+
+/* 段落、余白 */
+.box {
+    padding: 20px;
+    margin: 10vh 0;
+}
+p {
+    padding: 0 2em;
+}
+
+.contentsWrap {
+    padding: 10px 0;
+}
+.contentsWrap a {
+    color: #7891a6;
+}
+.contentsWrap a:visited {
+    color: #a3b4c2;
+}
+.index {
+    position: relative;
+    width: 100%;
+    padding-top: 10vh;
+    margin-top: 100vh;
+    background: linear-gradient(#ffffff00 ,#ffffff 10vh);
+    z-index: 2;
+}
+.page {
+    width: 60%;
+     min-width: 700px;
+    padding: 10px 0;
+    margin: 10vh auto;
+}
+.contents {
+    width: 70%;
+     min-width: 700px;
+    padding: 10px 0;
+    margin: 0 auto 10vh;
+}
+
+
+/* 小説ページ */
+/* ナビゲーション */
+.contentsNav {
+    margin: 5vh auto;
+}
+.contentsNav ul {
+    justify-content: center;
+}
+.active {
+    background: #f2f5f8;
+}
+
+/* 名前変換フォーム */
+.nameChange {
+    margin: 5vh 0;
+    text-align: center;
+}
+.nameChangeForm {
+    margin: 1em 0;
+}
+.nameChangeForm .enter {
+    width: 8em;
+    padding: .3em;
+    margin: 0 .5em .5em 0;
+}
+.nameChangeForm .button {
+    padding: .3em 1em;
+    margin-bottom: .5em;
+}
+
+
+/* カラム設定 */
+.columns {
+    margin-top: 50px;
+    columns: 3;
+}
+.columns > ul {
+    padding: 1em;
+    break-inside: avoid;
+    box-sizing: border-box;
+    transition: .2s;
+}
+.columns li {
+    margin: 5px 0;
+}
+.contents h4 {
+    padding-bottom: 30px;
+}
+
+/* 長編バナー風画像 */
+.longImage {
+    display: block;
+    position: relative;
+     max-width: 250px;
+}
+.longImage > img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+.long_new {
+    overflow: hidden;
+}
+.long_new .longImage::before {
+    content: 'new';
+    display: inline-block;
+    position: absolute;
+     top: 0;
+     left: 0;
+    width: 60px;
+    height: 60px;
+    padding-top: 38px;
+    background: #ffffffd0;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 1.1rem;
+    letter-spacing: .1em;
+    text-align: center;
+    transform: translate(-30px, -30px) rotate(-45deg);
+}
+.longInfo {
+    padding: 0 0 5px 5px;
+}
+.longInfo .info {
+    color: #bbbbbb;
+}
+
+/* あらすじ */
+.info,
+.mainContents li > span {
+    margin-left: 1em;
+    color: #6c6c6c;
+    font-size: .9em;
+}
+.mainContents li > .info-left {
+    margin: 0 1em 0 0;
+}
+
+/* 短編new */
+.new::after {
+    content: 'new';
+    padding: 0 2px;
+    margin-left: 5px;
+    background: #e7eef5;
+    border-radius: 2px;
+    font-size: 1rem;
+    letter-spacing: .1em;
+}
+
+
+/* ヘッダー */
+.mainHeader {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    position: fixed;
+     top: 0;
+     left: 0;
+    padding: 0 5%;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.mainHeader::before {
+    content: '';
+    display: block;
+    position: absolute;
+     bottom: 0;
+     left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/design68_buildings.svg') center 120% / auto 45% no-repeat;
+    z-index: 2;
+}
+.mainHeaderInner {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    padding: 30px;
+    margin-bottom: 20vh;
+    background: url('../img/design68_circle.png') center / cover no-repeat;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+/* 表示順設定 */
+.siteInfo {
+    order: 1;
+}
+.mainHeaderInner::after {
+    order: 2;
+}
+.headerNav {
+    order: 3;
+}
+
+
+.mainHeaderInner::after {
+    content: ':';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin: 15px 0;
+    color: var(--color2);
+    font-size: 1.5em;
+}
+
+
+h1 {
+    font-size: 2em;
+    font-weight: normal;
+}
+.headerURL {
+    color: #6d7e85;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+
+/* ヘッダーナビゲーション */
+.headerNav {
+    padding-bottom: 0;
+    font-size: 1.3em;
+}
+.headerNav ul {
+    display: flex;
+     justify-content: center;
+    box-sizing: border-box;
+}
+.headerNav li {
+    margin: 0 0 1rem;
+}
+.headerNav li a {
+    display: inline-block;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #41505a;
+    transition: .4s;
+}
+.headerNav li a:hover {
+    filter: blur(1px);
+    opacity: .8;
+}
+
+
+/* 共通ナビゲーション */
+.mainNav {
+    display: flex;
+     justify-content: flex-end;
+     align-items: center;
+    position: fixed;
+     top: 0;
+     left: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0 10%;
+    background: #f4f6f8c2;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    transition: .5s;
+    z-index: 3;
+}
+.mainNav ul {
+    display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+    padding: 1em 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.mainNav li {
+    margin: 0 1rem;
+    font-size: 1em;
+}
+.mainNav li a {
+    position: relative;
+    padding: 5px;
+    color: #41505a;
+    transition: .3s;
+    z-index: 2;
+}
+.mainNav li a:hover {
+    filter: blur(1px);
+}
+.mainNav::before {
+    content: '';
+    position: absolute;
+     top: 0;
+     left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+/* ナビゲーションがトップページの途中から出現する設定 */
+.indexNav {
+    top: -65px;
+    visibility: hidden;
+}
+.view .indexNav {
+    transform: translateY(65px);
+    visibility: visible;
+}
+
+/* solid009 */
+.button_solid009 a{
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    box-shadow: 5px 5px 0 #6bb6ff;
+}
+.button_solid009 a:hover {
+  background-color: #b3d9ff;
+  box-shadow: 0 0 0;
+}
+
+/* トップに戻るリンク */
+.back {
+    position: fixed;
+     bottom: 0;
+     right: 0;
+    text-align: right;
+    z-index: 3;
+}
+#backTop {
+    display: inline-block;
+    color: #5e7370;
+    transition: .8s;
+}
+#backTop > span {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+     bottom: -15px;
+     right: -15px;
+    width: 50px;
+    height: 50px;
+    text-shadow: 0 0 1rem #ffffff;
+    transform: rotate(-45deg);
+}
+#backTop::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+     bottom: -50px;
+     right: -50px;
+    background: var(--color1);
+    background-origin: border-box;
+    border: solid 50px transparent;
+    border-top: solid 50px #ffffff00;
+    box-shadow: 0 -5px 10px #e2ecec;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+.indexBack #backTop {
+    opacity: 0;
+    visibility: hidden;
+}
+.view .indexBack #backTop {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* フッター（削除OK※デフォルト非表示） */
+.mainFooter {
+    position: relative;
+    width: 50%;
+    margin: 5vh auto;
+    font-size: 1rem;
+    opacity: .3;
+    text-align: center;
+    z-index: 2;
+}
+
+/* レスポンシブ調整用 */
+/* タブレットなど */
+@media screen and (max-width:1300px) {
+    .box {
+        margin: 5vh auto;
+    }
+    .columns {
+        columns: 2;
+    }
+}
+
+/* スマホなど */
+@media screen and (max-width:800px) {
+    body {
+        font-size: 1.2rem;
+    }
+    h2 {
+        margin-bottom: 30px;
+        font-size: 1.1em;
+    }
+    h2::before {
+        width: 50px;
+        height: 50px;
+        top: 35px;
+        left: calc(50% - 25px);
+    }
+    h3 {
+        margin: 20px 0;
+        font-size: 1em;
+    }
+    h3 > span {
+        padding: 0 1px;
+        line-height: 20px;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+    h4::before {
+        width: 15px;
+        height: 15px;
+    }
+    .mailForm .enter {
+        width: 80%;
+        min-width: 200px;
+    }
+    p {
+        padding: 0 1em;
+    }
+    .box {
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .page {
+        width: 90%;
+         min-width: 200px;
+         max-width: 500px;
+        margin: auto;
+    }
+    .contents {
+        width: 90%;
+         max-width: 500px;
+         min-width: 200px;
+        margin: 30px auto;
+    }
+    .index {
+        padding-top: 100px;
+    }
+    .nameChange {
+        margin: 1em 0;
+    }
+    .nameChangeForm {
+        display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+    }
+    .columns {
+        columns: 1;
+        margin-top: 40px;
+    }
+    .columns ul {
+        margin-top: 60px;
+    }
+    .columns ul:first-of-type {
+        margin-top: 0;
+    }
+    .siteMenu {
+        width: 100%;
+    }
+    .mainHeader::before {
+        height: 600px;
+        background-size: auto 300px;
+    }
+    .mainHeaderInner {
+        flex-direction: column;
+        width: 80%;
+         max-width: 300px;
+        height: 50vh;
+         max-height: 350px;
+        padding: 40px;
+        margin-bottom: 80px;
+        background-size: contain;
+    }
+    .mainHeaderInner::after {
+        content: none;
+    }
+    .siteInfo {
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .headerURL {
+        font-size: 1rem;
+    }
+    .headerNav {
+        font-size: 1.1em;
+    }
+    .mainNav {
+        justify-content: center;
+        height: 40px;
+        padding: 0 1em;
+    }
+    .mainNav::before {
+        background-position: left top;
+        -webkit-mask-size: 80%;
+        mask-size: 80%;
+        opacity: .3;
+    }
+    .mainNav ul {
+        justify-content: center;
+    }
+    .mainNav li {
+        font-size: 1.3rem;
+    }
+    #backTop::after {
+        bottom: -40px;
+        right: -40px;
+        border-width: 40px;
+        box-shadow: none;
+    }
+    #backTop span {
+        bottom: -18px;
+        padding-top: 5px;
+    }
+
+    .titlelogoa {
+        
+        margin-top:1000px;
+    }
+
+}
