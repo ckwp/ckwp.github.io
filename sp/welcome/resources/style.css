@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.titi11{
+  display: none;
+  }
+
 /*--スマートフォン--*/
 @media screen and (max-width: 460px){
   #pc {
@@ -213,6 +217,10 @@ iframe {
   .md-flex li + li {
     margin-left: 16px;
   }
+  
+  .titi11{
+  display: none;
+  }
 }
 }
 
@@ -226,7 +234,9 @@ iframe {
     font-family: 'Kiwi Maru', serif;
     font-family: 'Noto Sans JP', sans-serif;
   }
-  
+  .titi11{
+  display: none;
+  }
   
 
 }
