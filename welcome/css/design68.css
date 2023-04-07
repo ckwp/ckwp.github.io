@@ -169,8 +169,7 @@ p {
 .contentsWrap a {
     color: #7891a6;
 }
-.contentsWrap a:visited {
-    color: #a3b4c2;
+
 }
 .index {
     position: relative;
