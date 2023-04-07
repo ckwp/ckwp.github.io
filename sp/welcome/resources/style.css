@@ -35,8 +35,12 @@ body{
 .cenpn{
   display: flex;
   align-items: center;
+  vertical-align: middle;
+    display: inline-block;
   }
-
+.cenp{
+  display: inline-block;
+  }
 .unla:after {
   content: "";
   position: absolute;
