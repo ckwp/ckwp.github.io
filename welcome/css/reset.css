@@ -31,12 +31,7 @@ time, mark, audio, video {
 }
 
 
-.cenpn{
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
-    display: inline-block;
-  }
+
 
 
 body {
@@ -97,6 +92,13 @@ abbr[title], dfn[title] {
 .naiyou{
 	list-style:none;
 }
+
+.cenpn{
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+    display: inline-block;
+  }
 
 
 /* Instagram */
