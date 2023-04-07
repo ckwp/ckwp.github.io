@@ -360,3 +360,7 @@ a.btn--radius {
   top: calc(50% - .5em);
   right: 1rem;
 }
+
+.litt1 {
+    list-style:none;
+}
