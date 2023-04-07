@@ -89,7 +89,9 @@ abbr[title], dfn[title] {
     cursor:help;
 }
 
-
+.naiyou{
+	list-style:none
+}
 
 
 /* Instagram */
