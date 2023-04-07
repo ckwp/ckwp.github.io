@@ -30,6 +30,10 @@ time, mark, audio, video {
     background:transparent;
 }
 
+
+
+
+
 body {
     line-height:1;
 }
@@ -83,6 +87,76 @@ del {
 abbr[title], dfn[title] {
     border-bottom:1px dotted;
     cursor:help;
+}
+
+
+
+
+/* Instagram */
+.flowbtn9 .fa-instagram{
+color:#c6529a;
+}
+  
+  
+  /* ボタン全体 */
+.flowbtn11{
+font-family:'Verdana',sans-serif;	
+border-radius:4px;
+position:relative;
+display:inline-block;
+width:30%;
+  
+font-size:20px;
+color:#fff!important;
+text-decoration:none;
+margin-bottom:5px;
+}
+  
+  /* Instagramアイコン位置 */
+.insta_btn11 .fa-instagram{
+position:relative;
+z-index:1;	
+}
+/* Instagram紫グラデ背景色 */
+.insta_btn11{
+background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+overflow:hidden;
+}
+/* Instagramオレンジグラデ背景色 */
+.insta_btn11:before{
+content: '';
+position:absolute;
+top:17px;
+left:-75px;
+width:100%;
+height:100%;
+background:-webkit-radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 45%, rgba(255, 88, 96, 0) 80%);
+background:radial-gradient(#ffdb2c 5%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 80%);
+}
+  
+  /* ボタン内テキスト調整 */
+.flowbtn11 span{
+font-size:14px;	
+position:relative;
+left:8px;
+bottom:2px;
+transition:.6s;	
+display:inline-block;	
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti2{
+padding:0!important;
+}
+/* アイコンボタンの位置調整 */
+.snsbtniti2{
+display:block
+flex-flow:row wrap;
+}
+/* アイコンボタン同士の余白調整 */
+.snsbtniti2 li{
+flex:0 0 48%;
+text-align:center!important;
 }
 
 table {
