@@ -175,7 +175,7 @@ iframe {
   width: 100%;
   aspect-ratio: 4/3; /*アスペクト比（縦横比）を指定*/
 }
-/*まずはお決まりのボックスサイズ算出をborer-boxに */
+/*まずはお決まりのボックスサイズ算出をborerdd-boxに */
 *,
 *:before,
 *:after {
