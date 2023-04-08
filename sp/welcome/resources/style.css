@@ -175,8 +175,88 @@ iframe {
   width: 100%;
   aspect-ratio: 4/3; /*アスペクト比（縦横比）を指定*/
 }
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
 
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+  
+/*その他と主な共通部分は省略*/
+
+a.btn--green {
+  color: #fff;
+  background-color: #094;
+}
+
+a.btn--green:hover {
+  color: #fff;
+  background: #00a349;
+}
+
+a.btn--green.btn--cubic {
+  border-bottom: 5px solid #00662d;
+}
+
+a.btn--green.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #00662d;
+}
+
+a.btn-c {
+  font-size: 2rem;
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+  border-radius: 100vh;
+}
+
+a.btn-c i.fa {
+  margin-right: 1rem;
+}
+
+a.btn-c:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.6rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - .8rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: '\f054';
+}
+  
 .footer-copyright {
   padding: 1rem;
   line-height: 1;
