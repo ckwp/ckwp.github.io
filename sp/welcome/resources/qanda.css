@@ -1,0 +1,91 @@
+.qa-002 dt,
+.qa-002 dd {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 1em 2em 1em 3.1em;
+    color: #333333;
+}
+
+.qa-002 dt {
+    font-weight: 600;
+}
+
+.qa-002 dd + dt {
+    margin-top: 1em;
+}
+
+.qa-002 dt::before,
+.qa-002 dd::before {
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 40px;
+    text-align: center;
+}
+
+.qa-002 dt::before {
+    background-color: #75bbff;
+    content: 'Q';
+}
+
+.qa-002 dd::before {
+    background-color: #ff8d8d;
+    content: 'A';
+}
+
+
+.menu {
+    max-width: 600px;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+label {
+    display: block;
+    margin: 0 0 4px 0;
+    padding : 15px;
+    line-height: 1;
+    color :#fff;
+    background : green;
+    cursor :pointer;
+}
+
+input {
+    display: none;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    background :#f4f4f4;
+    list-style: none;
+}
+
+.menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#menu_bar01:checked ~ #links01 li,
+#menu_bar02:checked ~ #links02 li {
+    height: 54px;
+    opacity: 1;
+}
