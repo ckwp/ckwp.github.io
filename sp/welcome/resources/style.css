@@ -235,7 +235,7 @@ a.btn--green.btn--cubic:hover {
 }
 
 a.btn-c {
-  font-size: 0.2em;
+  font-size: 0.em;
   position: relative;
   padding: 1.5rem 3rem 1.5rem 2rem;
   border-radius: 100vh;
