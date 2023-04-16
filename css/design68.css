@@ -426,7 +426,7 @@ h1 {
 }
 .mainNav ul {
     display: flex;
-     flex-wrap: wrap;
+
      align-items: center;
     padding: 1em 0;
     box-sizing: border-box;
