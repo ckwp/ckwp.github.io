@@ -110,10 +110,9 @@ input, select {
     }
 .titlelogob {
     
-    
+    margin: 0;
     text-align: center;
-    z-index: 3;
-    margin-left: 300px;
+
 }
 
 .ltu {
