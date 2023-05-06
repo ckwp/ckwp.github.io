@@ -115,6 +115,11 @@ input, select {
 
 }
 
+.cnofp{
+	text-align:center;
+	display:inline-block;
+}
+
 .ltu {
     padding: 0.25em 0.5em;/*上下 左右の余白*/
     color: #494949;/*文字色*/
