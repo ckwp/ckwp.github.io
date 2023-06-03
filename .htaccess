@@ -23,6 +23,6 @@ RewriteCond %{REQUEST_URI} /sp/
 RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android.*Mobile|Windows.\ Phone)
 RewriteRule ^sp/(.*)$ $1 [R]
 
-ErrorDocument 403 https://www.ck-wp.club/error/
-ErrorDocument 404 https://www.ck-wp.club/error/
+ErrorDocument 403 https://www.ck-wp.club/error/index.html
+ErrorDocument 404 https://www.ck-wp.club/error/index.html
 
