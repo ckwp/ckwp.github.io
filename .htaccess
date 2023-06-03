@@ -23,6 +23,5 @@ RewriteCond %{REQUEST_URI} /sp/
 RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android.*Mobile|Windows.\ Phone)
 RewriteRule ^sp/(.*)$ $1 [R]
 
-ErrorDocument 403 /error/index.html
-ErrorDocument 404 /error/index.html
+
 
