@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>くいずwebapp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* cssいれるゾ~~~114514 */
+ </style>
+</head>
+<body>
+    <div id="question-container">
+        <h1 id="question-text"></h1>
+        <input type="text" id="answer-input">
+        <button id="submit-btn">解答</button>
+    </div>
+
+    <script>
+        // lists
+        const questions = [
+            { question: "問題1: 今日は何した？", answer: "しらねぇよ" },
+            { question: "問題2: 友達いる？", answer: "しらねぇよ" }
+            // 問題をいれるゾ～
+        ];
+
+        let currentQuestionIndex = 0; // index.html
+
+        // 問題と入力欄を更新する関数
+        function updateQuestion() {
+            const currentQuestion = questions[currentQuestionIndex];
+            document.getElementById("question-text").textContent = currentQuestion.question;
+            document.getElementById("answer-input").value = ""; // MSA
+        }
+
+        // ボタンがクリックされたときの処理
+        document.getElementById("submit-btn").addEventListener("click", function() {
+            const userAnswer = document.getElementById("answer-input").value;
+            const currentQuestion = questions[currentQuestionIndex];
+
+            if (userAnswer === currentQuestion.answer) {
+                alert("正解！");
+                currentQuestionIndex++; // 次の問題へ
+                if (currentQuestionIndex < questions.length) {
+                    updateQuestion(); // 次の問題を表示
+                } else {
+                    alert("市ヶ谷ルークのチャンネル登録をしてください！"); // msgbox("ichigayarook")
+                }
+            } else {
+                alert("不正解！");
+            }
+        });
+
+        // mondaidasu
+        updateQuestion();
+    </script>
+</body>
+</html>
