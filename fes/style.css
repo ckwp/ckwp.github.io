@@ -1,0 +1,27 @@
+#container {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  p {
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
+  
