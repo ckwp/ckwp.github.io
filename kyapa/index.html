@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>キャパってる★</title>
+    <style>
+        html,body{
+  overflow: hidden
+}
+        body {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        .container {
+            text-align: center;
+
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .text {
+            font-size: 40px;
+            letter-spacing: 4px;
+            animation: flicker 0.1s infinite;
+            color: rgb(0, 255, 0);
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes changeColor {
+            0% {
+                color: red;
+            }
+            14.28% {
+                color: orange;
+            }
+            28.56% {
+                color: yellow;
+            }
+            42.84% {
+                color: green;
+            }
+            57.12% {
+                color: blue;
+            }
+            71.4% {
+                color: indigo;
+            }
+            85.68% {
+                color: violet;
+            }
+            100% {
+                color: red;
+            }
+        }
+
+        .rainbow-text {
+            animation: changeColor 1s linear infinite;
+
+        }
+
+        @keyframes changeFontSize {
+  0% {
+    font-size: 26px; /* 開始時のフォントサイズ */
+  }
+  50% {
+    font-size: 14px; /* 終了時のフォントサイズ */
+  }
+  100% {
+    font-size: 32px; /* 終了時のフォントサイズ */
+  }
+}
+
+@keyframes textAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    .text {
+      animation: textAnimation 0.3s infinite;
+    }
+
+.element {
+  animation-name: changeFontSize;
+  animation-duration: 1s; /* アニメーションの所要時間 */
+  animation-iteration-count: infinite; /* アニメーションの繰り返し回数（無限に繰り返す） */
+  animation-timing-function: linear; /* アニメーションのタイミング関数（一定の速度で変化） */
+  position: relative;
+
+}
+.kyapa{
+    font-size:100px;
+    animation: changeColor 1s linear infinite;
+    position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -11;
+
+    }
+
+      .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .auu{
+        margin-top: 0%;
+    }
+    
+    </style>
+</head>
+<body>
+<div class="auu">
+      <audio controls autoplay src="kyapa.mp3"></audio></div>
+
+
+    <div class="container">
+        <h1 class="text"><marquee>★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★</marquee></h1>
+
+        <div class="element">
+        <h1 class="rainbow-text"><marquee scrollamount="51" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="30" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="10" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="20" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="60" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="50" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="71" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="80" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="40" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="35" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="68" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="14" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="51" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="30" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="10" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="20" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="60" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="50" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="71" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="80" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="40" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="35" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="68" truespeed>キャパってる★</marquee></h1>
+        <h1 class="rainbow-text"><marquee scrollamount="14" truespeed>キャパってる★</marquee></h1>
+    </div>
+    </div>
+    <audio src="kyapa.mp3"></audio>
+    <div class="container">
+        <!-- 要素を追加するための空のコンテナ -->
+
+      </div>
+
+    <script>
+        setInterval(function() {
+          var fontSize = Math.floor(Math.random() * 20) + 12; // 12から31までのランダムな値を生成
+          document.querySelector('.element').style.fontSize = fontSize + 'px';
+        }, 100);
+
+        window.onload = function() {
+      setInterval(function() {
+        var text = document.createElement('h1');
+        text.innerHTML = '<div class="kyapa">キャパってる★キャパってる★キャパってる★キャパってる★</div>';
+        
+        document.body.appendChild(text);
+      }, 300);
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.container');
+  const elementWidth = 50; // 要素の幅
+  const elementHeight = 50; // 要素の高さ
+  const columnGap = 10; // 列の間隔
+  const rowGap = 10; // 行の間隔
+  const velocityX = 2; // X方向の速度
+  const velocityY = 2; // Y方向の速度
+  
+  let elements = []; // 要素の配列
+  
+  function createElements() {
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
+    const columns = Math.floor(containerWidth / (elementWidth + columnGap));
+    const rows = Math.floor(containerHeight / (elementHeight + rowGap));
+    
+    for (let i = 0; i < columns; i++) {
+      for (let j = 0; j < rows; j++) {
+        const element = document.createElement('div');
+        element.className = 'element';
+        element.style.left = i * (elementWidth + columnGap) + 'px';
+        element.style.top = j * (elementHeight + rowGap) + 'px';
+        elements.push({
+          element,
+          directionX: 1,
+          directionY: 1,
+        });
+        container.appendChild(element);
+      }
+    }
+  }
+  
+  function moveElements() {
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
+    
+    elements.forEach((item) => {
+      const { element, directionX, directionY } = item;
+      let left = parseInt(element.style.left, 10);
+      let top = parseInt(element.style.top, 10);
+      
+      left += velocityX * directionX;
+      top += velocityY * directionY;
+      
+      if (left <= 0 || left >= containerWidth - elementWidth) {
+        item.directionX *= -1;
+      }
+      
+      if (top <= 0 || top >= containerHeight - elementHeight) {
+        item.directionY *= -1;
+      }
+      
+      element.style.left = left + 'px';
+      element.style.top = top + 'px';
+    });
+  }
+  
+  createElements();
+  setInterval(moveElements, 10);
+});
+
+setInterval(function() {
+          var fontSize = Math.floor(Math.random() * 20) + 12; // 12から31までのランダムな値を生成
+          document.querySelector('.element').style.fontSize = fontSize + 'px';
+        }, 100);
+
+        window.onload = function() {
+      setInterval(function() {
+        var text = document.createElement('h1');
+        text.innerHTML = '<div class="kyapa">キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってる★★キャパってるキャパってる★★キャパってる★★キャパってるキャパってる★★キャパってる★★キャパってる★★キャパってる★★</div>';
+        
+        document.body.appendChild(text);
+      }, 300);
+    };
+      </script>
+</body>
+</html>
