@@ -3,6 +3,9 @@
     color: #fff;
     text-align: center;
     padding: 50px;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    text-align: center;
   }
   
   h1 {
