@@ -1,0 +1,61 @@
+
+
+
+ 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .welcome-title {
+      font-size: 48px;
+      font-family: 'Arial Black', sans-serif;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: animateTitle 2s ease-in-out infinite;
+    }
+
+    @keyframes animateTitle {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      25% { transform: translate(-50%, -50%) rotate(10deg); }
+      50% { transform: translate(-50%, -50%) rotate(0deg); }
+      75% { transform: translate(-50%, -50%) rotate(-10deg); }
+      100% { transform: translate(-50%, -50%) rotate(0deg); }
+    }
+
+    body {
+      background-color: #000;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .welcome-title {
+      font-size: 40px;
+      font-family: 'Arial Black', sans-serif;
+      color: #fff;
+      background: linear-gradient(to right, #ff0066, #6600ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="welcome-title">もっちぃに感謝を込めて</h1>
+</body>
+</html>
+
