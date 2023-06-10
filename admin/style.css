@@ -1,0 +1,66 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 全体のスタイル */
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* コンテンツ領域 */
+  #content {
+    margin: 20px;
+  }
+  
+  #content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #content ul {
+    list-style-type: none;
+  }
+  
+  #content ul li {
+    margin-bottom: 10px;
+  }
+  
+  #content ul li a {
+    color: #007aff;
+    text-decoration: none;
+  }
+  
+  #content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
