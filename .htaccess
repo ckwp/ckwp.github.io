@@ -10,7 +10,7 @@ RewriteCond %{REQUEST_FILENAME} !\.(css|js|jpg|jpeg|gif|png|xml)$ [NC]
 RewriteRule ^(.+)\.(.+)$ $1\.html
 
 # Redirect
-Redirect permanent // https://www.ck-wp.club/sp/
+Redirect permanent // https://www.ck-wpc.net/sp/
 
 RewriteEngine on
 RewriteBase /
